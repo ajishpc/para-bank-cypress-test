@@ -1,23 +1,50 @@
 {
+  "name": "para-bank-cypress-test",
+  "version": "1.0.0",
+  "description": "test with cypress",
+  "main": "index.js",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
+    "@cypress/webpack-preprocessor": "^5.16.1",
+    "@faker-js/faker": "8.2.0",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",    
+    "cypress":"^12.14.0",
+    "cypress-parallel": "0.13.0",
+    "dotenv": "16.3.1",
+    "eslint": "8.52.0",
+    "fs":"0.0.1-security",
+    "json-diff":"1.0.6",
+    "path":"0.12.7",
+    "typescript":"5.2.2",
+    "ts-loader":"9.5.0",
+    "webpack": "^5.75.0"
+  },
   "cypress-cucumber-preprocessor":{
     "nonGlobalStepDefinitions":true,
     "filterSpecs":true,
     "omitFiltered":true,
-    "stepDefinitions":"cypress/e2e/specs/**/*.js",
+    "stepDefinitions":"cypress/e2e/specs/**/*.ts",
     "html":{
       "enabled":true,
-      "output": "./report/index.html"
+      "output":"./report/index.html"
     },
     "json":{
       "enabled":true,
       "output":"./report/report.json"
     }
   },
-  "devDependencies": {
-    "cypress": "^12.11.0",
-    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
-    "@cypress/webpack-preprocessor": "^5.17.0",
-    "dotenv":"^16.0.3",
-    "json-diff":"^1.0.3"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajishpc/para-bank-cypress-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajishpc/para-bank-cypress-test/issues"
+  },
+  "homepage": "https://github.com/ajishpc/para-bank-cypress-test#readme"
 }
