@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cypress",
+    "\\cypress\\e2e",
+    "\\cypress\\e2e\\features",
+    "\\cypress\\e2e\\pages",
+    "\\cypress\\e2e\\specs"
+  ],
+  "SelectedNode": "\\cypress\\e2e\\pages\\loginPage.js",
+  "PreviewInSolutionExplorer": false
+}

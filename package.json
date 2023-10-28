@@ -1,0 +1,23 @@
+{
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions":true,
+    "filterSpecs":true,
+    "omitFiltered":true,
+    "stepDefinitions":"cypress/e2e/specs/**/*.js",
+    "html":{
+      "enabled":true,
+      "output": "./report/index.html"
+    },
+    "json":{
+      "enabled":true,
+      "output":"./report/report.json"
+    }
+  },
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
+    "@cypress/webpack-preprocessor": "^5.17.0",
+    "dotenv":"^16.0.3",
+    "json-diff":"^1.0.3"
+  }
+}
