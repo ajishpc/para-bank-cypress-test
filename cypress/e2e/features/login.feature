@@ -4,4 +4,4 @@ Feature: Authentication
 
         Examples:
             |username|password|
-            |username|password|
+            |declan|rice|

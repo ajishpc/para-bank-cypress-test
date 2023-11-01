@@ -56,12 +56,12 @@ export default defineConfig({
   viewportHeight:600,
   env:{
     username:process.env.USERNAME,
-    password:process.env.PASSWORD
+    password:process.env.PASSWORD,
 
   },
   e2e: {
     specPattern:"cypress/e2e/features/**/*.feature",
-    baseUrl:"https://parabank.parasoft.com/parabank/index.htm",
+    baseUrl:"https://parabank.parasoft.com",
     includeShadowDom:true,
     setupNodeEvents,
   },
